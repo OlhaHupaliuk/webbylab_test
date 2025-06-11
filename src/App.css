@@ -1,0 +1,130 @@
+#root {
+  --dark-blue-color: #5e4ed7;
+  --green-color: #4dbb68;
+  --dark-grey-color: #374957;
+  --light-grey-color: #e2e8ed;
+  --light-background-color: #e7f4ff;
+
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: Poppins;
+  background-color: var(--light-background-color);
+}
+body {
+  background-color: var(--light-background-color);
+}
+.button {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 16px;
+  height: 54px;
+  transition: all 0.2s ease-out;
+  border: none;
+  border-radius: 14px;
+}
+.button:hover {
+  transform: translateY(-3px);
+}
+.greenBtn {
+  background-color: var(--green-color);
+}
+.blueBtn {
+  background-color: var(--dark-blue-color);
+}
+.redBtn {
+  background-color: rgb(234, 114, 114);
+}
+
+.header {
+  width: 100vw;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 34px 36px;
+  z-index: 100;
+}
+.d {
+  height: 600px;
+}
+.header__logoWrap {
+  height: 54px;
+  align-items: center;
+}
+
+.header__title {
+  font-weight: 600;
+  color: var(--dark-grey-color);
+}
+
+.searchBar {
+  background-color: white;
+  padding: 25px 36px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.searchBar__btn {
+  background-color: var(--light-grey-color);
+  color: #000;
+}
+.active {
+  background-color: var(--dark-blue-color);
+  color: white;
+}
+
+.searchBar__inputWrap {
+  border-radius: 14px;
+  border: 1px solid #c7c7c7;
+  background: #fff;
+  text-align: center;
+}
+.searchBar__select {
+  padding: 14px 10px;
+  border: var(--light-grey-color) 1px solid;
+  border-radius: 10px;
+}
+
+.searchBar__inputWrap input {
+  border: transparent 1px solid;
+}
+.searchBar__inputWrap {
+  border-radius: 12px;
+  padding: 15px 20px;
+}
+.searchBar__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+
+.searchBar__input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.movieCard {
+  border-radius: 20px;
+  background: linear-gradient(90deg, #2e2761 0%, #e29090 100%);
+  box-shadow: 0px 4px 20px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 80px;
+}
+.movieCard__content {
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+.movieCard__content h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.movieCard__content p {
+  color: var(--grey-color);
+  font-size: 18px;
+}
