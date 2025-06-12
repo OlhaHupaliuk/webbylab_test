@@ -1,8 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
 import axios from 'axios';
 import type { Movie, MovieExtended, AddMovieData } from '../types';
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = (window as any).env?.API_URL || 'http://localhost:8000/api/v1';
 const API_TOKEN = import.meta.env.VITE_API_TOKEN;
 
 const headers = { Authorization: `${API_TOKEN}` };
@@ -47,7 +48,7 @@ export const getMovie = createAsyncThunk(
 
 export const getMovies = createAsyncThunk(
   'movies/getMovies',
-  async () => {
+  async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(`${API_URL}/movies`, { headers });
       return response.data.data;

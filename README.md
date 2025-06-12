@@ -1,5 +1,52 @@
 # React + TypeScript + Vite
 
+Якщо потрібно зроблю цей репозитарій приватним.
+
+Для запуску проекту потрібен файл .env з такими змінними: 
+  VITE_API_URL=http://localhost:8000/api/v1
+  VITE_API_TOKEN=
+
+
+Побудова Docker-образу
+  вихідний код => docker build -t olhahupaliuk/movies-frontend --build-arg API_URL=http://host.docker.internal:8000/api/v1 .
+
+
+Запуск фронтенду із Docker Hub
+  docker pull olhahupaliuk/movies-frontend
+  Запуск згідно шаблону - в один рядок:
+  docker run --name movies -p 3000:3000 -e API_URL=http://localhost:8000/api/v1 your_dockerhub/movies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
