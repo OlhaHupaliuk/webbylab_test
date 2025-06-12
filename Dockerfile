@@ -21,6 +21,4 @@ RUN chmod +x /entrypoint.sh
 
 # Встановлюємо entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
-
-# Запускаємо nginx
 CMD ["nginx", "-g", "daemon off;"]
