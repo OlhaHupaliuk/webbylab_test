@@ -5,19 +5,23 @@
 Для запуску проекту потрібен файл .env з такими змінними: 
 
   VITE_API_URL=http://localhost:8000/api/v1 => Неправильно 
+
   API_URL=http://localhost:8000/api/v1 => без VITE_
 
   VITE_API_TOKEN=
 
 
 Побудова Docker-образу
-  вихідний код => docker build -t olhahupaliuk/movies-frontend --build-arg API_URL=http://host.docker.internal:8000/api/v1 .
+  вихідний код => docker build -t olhahupaliuk/movies-frontend .
 
 
-Запуск фронтенду із Docker Hub
+Запуск контейнера
   docker pull olhahupaliuk/movies-frontend
+
   Запуск згідно шаблону - в один рядок:
-  docker run --name movies -p 3000:3000 -e API_URL=http://localhost:8000/api/v1 olhahupaliuk/movies
+
+  docker run --name movies -p 3000:3000 -e API_URL=http://localhost:5000/api/v1 olhahupaliuk/movies
+
 
 
 
