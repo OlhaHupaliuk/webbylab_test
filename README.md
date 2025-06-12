@@ -14,35 +14,7 @@
 Запуск фронтенду із Docker Hub
   docker pull olhahupaliuk/movies-frontend
   Запуск згідно шаблону - в один рядок:
-  docker run --name movies -p 3000:3000 -e API_URL=http://localhost:8000/api/v1 your_dockerhub/movies
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  docker run --name movies -p 3000:3000 -e API_URL=http://localhost:8000/api/v1 olhahupaliuk/movies
 
 
 
