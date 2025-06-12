@@ -3,7 +3,8 @@
 Якщо потрібно зроблю цей репозитарій приватним.
 
 Для запуску проекту потрібен файл .env з такими змінними: 
-  VITE_API_URL=http://localhost:8000/api/v1
+  VITE_API_URL=http://localhost:8000/api/v1 => Неправильно 
+  API_URL=http://localhost:8000/api/v1 => без VITE_
   VITE_API_TOKEN=
 
 
